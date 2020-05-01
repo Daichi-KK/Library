@@ -1,0 +1,163 @@
+
+.border{
+  border:1px solid black;
+  height:575px;
+  border-radius: 5px;
+  margin:20px;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  
+}
+.navbar{
+  margin-bottom: 10px;
+}
+.navbar li {
+  float: right;
+}
+
+.detail{
+  text-align: center;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+
+.submit input[type="submit"]{
+  width:175px;
+  border-radius: 20px;
+  outline:none;
+  background-color: orange;
+  color:white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.25s;
+  height:50px;
+}
+.submit input[type="submit"]:hover{
+  background-color: olive;
+}
+
+.col{
+  height:600px;
+  margin-bottom: 40px;
+  float:left;
+  width:33.3333333%;
+}
+.borrow input[type="text"]{
+  display:block;
+}
+
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.box{
+  width:300px;
+  padding:40px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box h1{
+  color:black;
+  text-transform: uppercase;
+  font-weight: 500px;
+}
+
+.box input[type="text"],.box input[type="password"]{
+  border:0;
+  background: none;
+  display:block;
+  margin:20px auto;
+  text-align: center;
+  border: 2px solid orange;
+  padding:14px 10px;
+  width:200px;
+  outline:none;
+  color:#333;
+  border-radius: 20px;
+  transition: 0.25s;
+}
+
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+  width:260px;
+  border-color: orangered;
+}
+
+.box input[type="submit"]{
+  border:0;
+  background: none;
+  display:block;
+  margin:20px auto;
+  text-align: center;
+  border: 2px solid #333;
+  padding:14px 40px;
+  outline:none;
+  color:#333;
+  border-radius: 20px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box h5{
+  font-size: 20px;
+  color: #333;
+}
+.box input[type="submit"]:hover{
+  border-color: #111;
+}
+
+table{
+  border-collapse: collapse;
+  width:95%;
+}
+
+th, td {
+  padding:8px;
+}
+
+.tr:hover{
+  background-color: #D8BFBA;
+}
+
+th{
+  border-bottom: 1px solid black;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+.tr input[type="button"]{
+  border:0;
+  background: orange;
+  display:block;
+  margin:20px auto;
+  text-align: center;
+  border: 2px solid;
+  padding:14px 40px;
+  outline:none;
+  color:white;
+  border-radius: 20px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+
+.tr input[type="button"]:hover{
+  background-color: orangered;
+}

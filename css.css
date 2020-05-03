@@ -80,8 +80,10 @@ body{
   text-transform: uppercase;
   font-weight: 500px;
 }
-
-.box input[type="text"],.box input[type="password"]{
+.box-set h4{
+  text-align: center;
+}
+.box input[type="text"],.box input[type="password"],.box-set input[type="text"]{
   border:0;
   background: none;
   display:block;
@@ -101,7 +103,7 @@ body{
   border-color: orangered;
 }
 
-.box input[type="submit"]{
+.box input[type="submit"],.box-set input[type="submit"]{
   border:0;
   background: none;
   display:block;

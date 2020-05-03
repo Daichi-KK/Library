@@ -33,7 +33,7 @@
                     <img src="img/<?php echo $show['b_img']; ?>" width="300" height="300">
                 </div>
                 <div class="detail" style="text-align:center;">
-                    <h2><?php echo $num++ . "." . $show["b_name"]; ?></h2>
+                    <h2><?php echo $num++ . ". " . $show["b_name"]; ?></h2>
                     <p>ผู้แต่ง : <?php echo $show["b_au"]; ?></p>
                     <p>หมวดหมู่ : <?php echo $show["c_name"]; ?></p>
                     <p>สถานะ : <?php if($show["b_status"] == "a"){

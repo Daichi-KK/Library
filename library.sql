@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 01, 2020 at 09:05 PM
+-- Generation Time: May 03, 2020 at 09:13 AM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -42,10 +42,14 @@ CREATE TABLE `book` (
 --
 
 INSERT INTO `book` (`b_id`, `b_name`, `b_au`, `b_cate`, `b_status`, `b_img`) VALUES
-(1, 'computer', 'top', 1, 'a', 'img01.jpg'),
-(2, 'math', 'rat', 1, 'a', 'img01.jpg'),
-(3, 'cartoon', 'hot', 2, 'b', 'img01.jpg'),
-(4, 'gov', 'bug', 1, 'b', 'img01.jpg');
+(1, 'วุฒิภาวะของความเป็นครู', 'วิเชียร ไชยบัง', 1, 'a', 'img01.jpg'),
+(2, '5 เคล็ดลับขอทุนเรียนต่อเมืองนอก', 'พลรพี ทุมมาพันธ์ (พล)', 1, 'a', 'img01.jpg'),
+(3, 'มุกฟายยย ฮาเล่นใหญ่!', 'สำนักพิมพ์เข้าท่า', 2, 'a', 'img01.jpg'),
+(4, 'Born to be หมอ Exclusive', 'นพ. วชิรพล วันเพ็ญ', 1, 'a', 'img01.jpg'),
+(5, 'THE SCIENCE OF SELLING', 'David Hoffeld', 5, 'b', 'img01.jpg'),
+(6, 'บาสเกตบอล', 'Sky Sports Team', 3, 'a', 'img01.jpg'),
+(7, 'ศิลปะการเล่นตะกร้อ', 'ดร. บุญยงค์ เกศเทศ', 3, 'a', 'img01.jpg'),
+(8, 'อุตสาหกรรมท่องเที่ยว', 'ปัญจวรรณ อ่อนหวาน', 4, 'a', 'img01.jpg');
 
 -- --------------------------------------------------------
 
@@ -69,15 +73,11 @@ CREATE TABLE `borrow` (
 --
 
 INSERT INTO `borrow` (`br_id`, `b_id`, `stu_id`, `t_id`, `br_date_bf`, `br_date_send`, `br_date_af`, `br_status`) VALUES
-(18, '1', '1', '1', '2020-04-04', '2020-04-09', '2020-04-06', 'a'),
-(19, '1', '1', '1', '2020-04-07', '2020-04-12', '2020-04-07', 'a'),
-(20, '1', '1', '1', '2020-04-07', '2020-04-12', '2020-04-07', 'a'),
-(21, '2', '2', '1', '2020-04-07', '2020-04-12', '2020-04-07', 'a'),
-(22, '2', '2', '1', '2020-04-07', '2020-04-12', '2020-04-08', 'a'),
-(23, '1', '2', '2', '2020-04-08', '2020-04-13', '2020-04-10', 'a'),
-(24, '2', '2', '1', '2020-04-10', '2020-04-15', '2020-05-02', 'a'),
-(25, '3', '2', '1', '2020-05-01', '2020-05-06', '0000-00-00', 'b'),
-(26, '4', '1', '1', '2020-05-01', '2020-05-06', '0000-00-00', 'b');
+(1, '1', '1', '1', '2020-05-02', '2020-05-07', '2020-05-02', 'a'),
+(2, '2', '2', '1', '2020-05-02', '2020-05-07', '2020-05-02', 'a'),
+(3, '4', '5', '1', '2020-05-02', '2020-05-07', '2020-05-02', 'a'),
+(4, '3', '4', '1', '2020-05-02', '2020-05-07', '2020-05-02', 'a'),
+(5, '5', '5', '1', '2020-05-03', '2020-05-08', '0000-00-00', 'b');
 
 -- --------------------------------------------------------
 
@@ -97,7 +97,10 @@ CREATE TABLE `category` (
 
 INSERT INTO `category` (`c_id`, `b_cate`, `c_name`) VALUES
 (1, '1', 'การศึกษา'),
-(2, '2', 'การ์ตูน');
+(2, '2', 'บันเทิง'),
+(3, '3', 'กีฬา'),
+(4, '4', 'ท่องเที่ยว'),
+(5, '5', 'ต่างประเทศ');
 
 -- --------------------------------------------------------
 
@@ -117,7 +120,11 @@ CREATE TABLE `student` (
 
 INSERT INTO `student` (`stu_id`, `stu_name`, `stu_grade`) VALUES
 (1, 'top', '10'),
-(2, 'nut', '12');
+(2, 'nut', '12'),
+(3, 'golf', '9'),
+(4, 'kim', '10'),
+(5, 'tew', '12'),
+(6, 'boat', '11');
 
 -- --------------------------------------------------------
 
@@ -183,25 +190,25 @@ ALTER TABLE `teacher`
 -- AUTO_INCREMENT for table `book`
 --
 ALTER TABLE `book`
-  MODIFY `b_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `b_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `borrow`
 --
 ALTER TABLE `borrow`
-  MODIFY `br_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `br_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `stu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `stu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `teacher`

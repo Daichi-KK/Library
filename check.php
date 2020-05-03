@@ -32,7 +32,10 @@
                 <th></th>
                 <th></th>
             </tr>
-        <?php while($show = $query -> fetch_array()){?>    
+        <?php
+            $i = 1;
+            while($show = $query -> fetch_array()){
+        ?>    
             <tr class="tr" style="padding:200px;">
                 <td align="center"><?php echo $show["br_id"]; ?></td>
                 <td style="margin:20px;">
